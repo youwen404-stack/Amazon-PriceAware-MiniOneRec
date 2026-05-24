@@ -211,10 +211,10 @@ python scripts/evaluate_amazon_sft.py \
 
 ## Acknowledgements
 
-This work is built on and inspired by **MiniOneRec**, which introduced a compact generative recommendation pipeline based on Semantic IDs and LLM-style item generation. We sincerely thank the MiniOneRec authors and contributors for releasing their project and making this line of experimentation possible.
+This work is built on and inspired by [**MiniOneRec**](https://github.com/AkaliKong/MiniOneRec), which introduced a compact generative recommendation pipeline based on Semantic IDs and LLM-style item generation. We sincerely thank the MiniOneRec authors and contributors for releasing their project and making this line of experimentation possible.
 
-This project also uses ideas inspired by value-aware supervised fine-tuning in industrial generative recommendation, especially the motivation of optimizing recommendation outputs beyond pure next-item accuracy.
+This project is also motivated by Kuaishou's paper [**Generative Recommendation for Large-Scale Advertising**](https://arxiv.org/abs/2602.22732), especially its discussion of value-aware supervised learning for aligning generative recommendation with business value beyond pure next-item accuracy. We thank the authors for providing an industrial perspective that inspired the value-aware SFT experiments in this repository.
 
 ## Citation
 
-If you use this repository, please cite or acknowledge the original MiniOneRec project and the Amazon Reviews 2023 dataset source according to their respective licenses and citation guidelines.
+If you use this repository, please cite or acknowledge the original [MiniOneRec project](https://github.com/AkaliKong/MiniOneRec), Kuaishou's [Generative Recommendation for Large-Scale Advertising](https://arxiv.org/abs/2602.22732), and the Amazon Reviews 2023 dataset source according to their respective licenses and citation guidelines.
