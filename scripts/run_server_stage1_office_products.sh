@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-PROJECT_DIR="${PROJECT_DIR:-/home/youwen/work/Rec/Amazon-PriceAware-MiniOneRec}"
-DATA_DIR="${DATA_DIR:-/home/youwen/data/rec/amazon_price_aware}"
+PROJECT_DIR="${PROJECT_DIR:-$(pwd)}"
+DATA_DIR="${DATA_DIR:-data/amazon_price_aware}"
 CATEGORY="${CATEGORY:-Office_Products}"
 
 RAW_DIR="${DATA_DIR}/raw"

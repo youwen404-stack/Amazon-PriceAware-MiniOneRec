@@ -167,8 +167,8 @@ def convert_mini_category(
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Convert a popular Amazon subset to MiniOneRec-style data.")
     parser.add_argument("--category", default="Industrial_and_Scientific")
-    parser.add_argument("--data-root", default="/home/youwen/data/rec/amazon_price_aware/raw_amazon_2023")
-    parser.add_argument("--output-dir", default="/home/youwen/data/rec/amazon_price_aware/processed_price_aware")
+    parser.add_argument("--data-root", default="data/raw_amazon_2023")
+    parser.add_argument("--output-dir", default="data/processed_price_aware")
     parser.add_argument("--dataset-name", default="")
     parser.add_argument("--k-core", type=int, default=5)
     parser.add_argument("--candidate-items", type=int, default=5000)

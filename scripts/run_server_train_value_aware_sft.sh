@@ -4,10 +4,10 @@ set -euo pipefail
 CATEGORY="${CATEGORY:-Automotive}"
 K_CORE="${K_CORE:-5}"
 DATASET_NAME="${DATASET_NAME:-Amazon_${CATEGORY}_priced_${K_CORE}core}"
-DATA_ROOT="${DATA_ROOT:-/home/youwen/data/rec/amazon_price_aware}"
+DATA_ROOT="${DATA_ROOT:-data/amazon_price_aware}"
 PROCESSED_DIR="${PROCESSED_DIR:-${DATA_ROOT}/processed_price_aware/${DATASET_NAME}}"
 OUTPUT_ROOT="${OUTPUT_ROOT:-${DATA_ROOT}/outputs}"
-BASE_MODEL="${BASE_MODEL:-/home/youwen/data/minionerec/models/Qwen2.5-1.5B}"
+BASE_MODEL="${BASE_MODEL:-models/Qwen2.5-1.5B}"
 
 TRAIN_SAMPLE="${TRAIN_SAMPLE:-50000}"
 METADATA_SAMPLE="${METADATA_SAMPLE:-${TRAIN_SAMPLE}}"

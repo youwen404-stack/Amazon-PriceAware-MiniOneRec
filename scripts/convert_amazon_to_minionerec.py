@@ -423,11 +423,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--category", default="Automotive")
     parser.add_argument(
         "--data-root",
-        default="/home/youwen/data/rec/amazon_price_aware/raw_amazon_2023",
+        default="data/raw_amazon_2023",
     )
     parser.add_argument(
         "--output-dir",
-        default="/home/youwen/data/rec/amazon_price_aware/processed_price_aware",
+        default="data/processed_price_aware",
     )
     parser.add_argument("--dataset-name", default="")
     parser.add_argument("--k-core", type=int, default=5)

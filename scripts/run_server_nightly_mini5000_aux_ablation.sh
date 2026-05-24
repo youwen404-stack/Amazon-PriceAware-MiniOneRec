@@ -3,11 +3,11 @@ set -euo pipefail
 
 # Strictly serial nightly queue for mini5000 auxiliary-task ablation.
 # Run from the server with:
-#   setsid bash scripts/run_server_nightly_mini5000_aux_ablation.sh > /home/youwen/data/rec/amazon_price_aware/logs/nightly_mini5000_aux_ablation.log 2>&1 < /dev/null &
+#   setsid bash scripts/run_server_nightly_mini5000_aux_ablation.sh > logs/nightly_mini5000_aux_ablation.log 2>&1 < /dev/null &
 
-REPO_DIR="/home/youwen/work/Rec/Amazon-PriceAware-MiniOneRec"
-DATA_ROOT="/home/youwen/data/rec/amazon_price_aware"
-BASE_MODEL="/home/youwen/data/minionerec/models/Qwen2.5-1.5B"
+REPO_DIR="${REPO_DIR:-$(pwd)}"
+DATA_ROOT="${DATA_ROOT:-data/amazon_price_aware}"
+BASE_MODEL="${BASE_MODEL:-models/Qwen2.5-1.5B}"
 DATASET="Amazon_Industrial_and_Scientific_priced_5core_mini5000"
 PROCESSED_DIR="${DATA_ROOT}/processed_price_aware/${DATASET}"
 TRAIN_FILE="${PROCESSED_DIR}/minionerec/train/${DATASET}.csv"

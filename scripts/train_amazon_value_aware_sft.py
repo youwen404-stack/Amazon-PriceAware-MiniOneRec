@@ -324,13 +324,13 @@ def train(args: argparse.Namespace) -> None:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train Amazon GR4AD-style value-aware SFT.")
-    parser.add_argument("--base-model", default="/home/youwen/data/minionerec/models/Qwen2.5-1.5B")
+    parser.add_argument("--base-model", default="models/Qwen2.5-1.5B")
     parser.add_argument("--train-file", required=True)
     parser.add_argument("--eval-file", required=True)
     parser.add_argument("--item-meta-path", required=True)
     parser.add_argument("--sid-index-path", required=True)
     parser.add_argument("--dataset-name", default="Amazon_Automotive_priced_5core")
-    parser.add_argument("--output-root", default="/home/youwen/data/rec/amazon_price_aware/outputs")
+    parser.add_argument("--output-root", default="outputs")
     parser.add_argument("--output-dir", default="")
     parser.add_argument("--run-tag", default="")
     parser.add_argument("--cache-dir", default="")

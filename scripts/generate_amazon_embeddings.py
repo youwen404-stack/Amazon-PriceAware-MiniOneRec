@@ -13,7 +13,7 @@ import torch
 from transformers import AutoModel, AutoTokenizer
 
 
-DEFAULT_MODEL_PATH = "/home/youwen/data/minionerec/models/Qwen2.5-1.5B"
+DEFAULT_MODEL_PATH = "models/Qwen2.5-1.5B"
 
 
 def load_json(path: str) -> Dict[str, Dict[str, Any]]:

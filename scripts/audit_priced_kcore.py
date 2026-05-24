@@ -175,7 +175,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--data-root",
-        default="/home/youwen/data/rec/amazon_price_aware/raw_amazon_2023",
+        default="data/raw_amazon_2023",
         help="Directory containing <category>/reviews.jsonl and <category>/meta.jsonl.",
     )
     parser.add_argument("--categories", nargs="+", default=DEFAULT_CATEGORIES)
